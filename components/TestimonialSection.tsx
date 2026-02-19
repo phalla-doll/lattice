@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Quote } from 'lucide-react';
+import { Star, Quote, ArrowUpRight, ArrowRight } from 'lucide-react';
 
 const testimonials = [
   {
@@ -46,7 +46,7 @@ export const TestimonialSection: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
         {testimonials.map((item) => (
           <div 
             key={item.id} 
@@ -90,6 +90,17 @@ export const TestimonialSection: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-gray-900 border border-gray-200 px-8 py-4 rounded-full text-base font-medium hover:border-gray-400 hover:bg-gray-50 transition-all">
+            View all testimonials
+            <ArrowRight className="w-4 h-4" />
+        </button>
+        <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-black text-white px-8 py-4 rounded-full text-base font-medium hover:bg-gray-800 transition-all hover:-translate-y-1 shadow-xl shadow-gray-200">
+            Request a demo
+            <ArrowUpRight className="w-4 h-4" />
+        </button>
       </div>
     </section>
   );
