@@ -91,19 +91,6 @@ export const TestimonialSection: React.FC = () => {
           </div>
         ))}
       </div>
-      
-      {/* Logos Strip */}
-      <div className="mt-24 pt-16 border-t border-gray-100">
-         <p className="text-center text-xs text-gray-400 font-bold mb-10 uppercase tracking-[0.2em]">Powering teams at world-class companies</p>
-         <div className="flex flex-wrap justify-center gap-12 md:gap-20 opacity-40 hover:opacity-100 transition-all duration-700">
-            {/* Simple text logos styled */}
-            <span className="text-xl font-black font-mono tracking-tighter hover:text-black cursor-default">VERCEL</span>
-            <span className="text-xl font-bold font-serif italic hover:text-black cursor-default">Notion</span>
-            <span className="text-xl font-semibold tracking-tighter hover:text-blue-600 cursor-default">Figma</span>
-            <span className="text-xl font-black hover:text-purple-600 cursor-default">Linear</span>
-            <span className="text-xl font-bold tracking-widest hover:text-red-500 cursor-default">LOOM</span>
-         </div>
-      </div>
     </section>
   );
 };

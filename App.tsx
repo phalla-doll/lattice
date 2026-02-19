@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { WorkforceSection } from './components/WorkforceSection';
 import { TeamSection } from './components/TeamSection';
 import { TestimonialSection } from './components/TestimonialSection';
+import { LogoSection } from './components/LogoSection';
 import { Footer } from './components/Footer';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <WorkforceSection />
         <TeamSection />
         <TestimonialSection />
+        <LogoSection />
       </main>
       <Footer />
     </div>
