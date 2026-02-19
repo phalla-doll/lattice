@@ -6,7 +6,7 @@ export const Hero: React.FC = () => {
     <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto overflow-hidden">
       {/* Headlines */}
       <div className="text-center max-w-5xl mx-auto mb-20">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tighter text-gray-900 mb-8 leading-[1.05]">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tighter text-gray-900 mb-8 leading-[1.1]">
           Where Marketing Careers <br className="hidden md:block" />
           are Built.
         </h1>
