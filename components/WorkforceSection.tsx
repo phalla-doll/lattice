@@ -9,7 +9,7 @@ export const WorkforceSection: React.FC = () => {
         {/* Left Column Content */}
         <div className="flex-1 space-y-12">
           <div className="space-y-6 max-w-2xl">
-            <h2 className="text-4xl md:text-6xl font-medium tracking-tighter text-gray-900 leading-[1.1]">
+            <h2 className="text-4xl md:text-6xl font-display font-bold tracking-tighter text-gray-900 leading-[1.1]">
               Quickly Expand your <br /> Workforce.
             </h2>
             <p className="text-gray-500 text-lg md:text-xl font-normal max-w-lg leading-relaxed">
@@ -33,7 +33,7 @@ export const WorkforceSection: React.FC = () => {
                </div>
                
                <div className="absolute bottom-8 left-8 z-10">
-                   <p className="text-3xl font-medium text-gray-900 mb-1 leading-tight tracking-tight">Hire <br/> Employees</p>
+                   <p className="text-3xl font-display font-medium text-gray-900 mb-1 leading-tight tracking-tight">Hire <br/> Employees</p>
                </div>
                <div className="absolute bottom-8 right-8 z-10">
                    <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm group-hover:bg-black group-hover:text-white transition-all duration-300 transform group-hover:scale-110">
@@ -56,7 +56,7 @@ export const WorkforceSection: React.FC = () => {
                </div>
                
                <div className="absolute bottom-8 left-8 z-10">
-                   <p className="text-3xl font-medium text-white mb-1 leading-tight tracking-tight">Hire a <br/> Contractor</p>
+                   <p className="text-3xl font-display font-medium text-white mb-1 leading-tight tracking-tight">Hire a <br/> Contractor</p>
                </div>
                <div className="absolute bottom-8 right-8 z-10">
                    <button className="w-12 h-12 bg-white/10 backdrop-blur-md text-white rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-300 transform group-hover:scale-110 border border-white/10">
@@ -91,7 +91,7 @@ export const WorkforceSection: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 
                 <div className="absolute bottom-12 left-10 right-10">
-                    <h3 className="text-3xl font-medium text-white mb-2 tracking-tight">Savannah Nguyen</h3>
+                    <h3 className="text-3xl font-display font-medium text-white mb-2 tracking-tight">Savannah Nguyen</h3>
                     <p className="text-gray-300 text-base font-light mb-6">CEO, Los Angeles, USA</p>
                     <div className="h-1 w-full bg-white/20 rounded-full overflow-hidden">
                         <div className="h-full w-1/3 bg-white rounded-full"></div>
@@ -116,7 +116,7 @@ export const WorkforceSection: React.FC = () => {
             <span className="text-2xl font-extrabold text-gray-800 tracking-tight">Thumbtack</span>
             <div className="flex items-center gap-2 text-gray-800">
                  <div className="w-6 h-6 bg-gray-800 rounded-sm"></div>
-                 <span className="text-2xl font-bold">Lattice</span>
+                 <span className="text-2xl font-display font-bold">Lattice</span>
             </div>
         </div>
       </div>

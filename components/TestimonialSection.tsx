@@ -38,7 +38,7 @@ export const TestimonialSection: React.FC = () => {
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
       <div className="text-center max-w-3xl mx-auto mb-20">
-        <h2 className="text-4xl md:text-5xl font-medium tracking-tighter text-gray-900 mb-6">
+        <h2 className="text-4xl md:text-5xl font-display font-medium tracking-tighter text-gray-900 mb-6">
           Trusted by teams building <br /> the future.
         </h2>
         <p className="text-gray-500 text-lg font-light max-w-2xl mx-auto">

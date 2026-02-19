@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
               <path d="M7 17L17 7M7 7h10v10" />
             </svg>
           </div>
-          <span className="text-lg font-bold">Lattice</span>
+          <span className="text-lg font-display font-bold">Lattice</span>
         </div>
         <p className="text-gray-500 text-sm">© 2024 Lattice. All rights reserved. Design clone for educational purposes.</p>
         <div className="flex gap-6">

@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
               <path d="M7 17L17 7M7 7h10v10" />
             </svg>
           </div>
-          <span className="text-xl font-bold tracking-tight">Lattice</span>
+          <span className="text-xl font-display font-bold tracking-tight">Lattice</span>
         </div>
 
         {/* Center: Desktop Links */}

@@ -22,7 +22,7 @@ export const TeamSection: React.FC = () => {
           
           {/* Header Area */}
           <div className="flex flex-col md:flex-row justify-between items-start mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white max-w-2xl leading-[1.1] tracking-tight mb-8 md:mb-0">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-medium text-white max-w-2xl leading-[1.1] tracking-tight mb-8 md:mb-0">
               The help you Need, <br/> When you Need it.
             </h2>
             
@@ -100,7 +100,7 @@ export const TeamSection: React.FC = () => {
                         <div className="inline-block px-3 py-1 bg-white/10 rounded-full text-[10px] font-bold tracking-widest uppercase mb-6 border border-white/10">
                             Insight
                         </div>
-                        <h3 className="text-2xl font-medium leading-snug mb-4 tracking-tight">
+                        <h3 className="text-2xl font-display font-medium leading-snug mb-4 tracking-tight">
                             Enhancing the Entire Employee Cycle
                         </h3>
                         <p className="text-gray-400 text-sm font-normal leading-relaxed mb-8">

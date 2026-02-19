@@ -6,7 +6,7 @@ export const Hero: React.FC = () => {
     <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto overflow-hidden">
       {/* Headlines */}
       <div className="text-center max-w-5xl mx-auto mb-20">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tighter text-gray-900 mb-8 leading-[1.1]">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tighter text-gray-900 mb-8 leading-[1.1]">
           Where Marketing Careers <br className="hidden md:block" />
           are Built.
         </h1>
@@ -62,7 +62,7 @@ export const Hero: React.FC = () => {
                     <span className="inline-block px-4 py-1.5 rounded-full border border-white/40 text-white text-xs font-medium mb-6 bg-white/10 backdrop-blur-md">
                         Job Opportunities
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-medium text-white mb-6 leading-tight drop-shadow-md">
+                    <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 leading-tight drop-shadow-md">
                         Efficiently transform your <br/> candidate experience.
                     </h2>
                     <p className="text-white/90 text-sm md:text-base max-w-md font-light leading-relaxed drop-shadow-md">
