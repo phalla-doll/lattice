@@ -20,9 +20,9 @@ export const WorkforceSection: React.FC = () => {
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Employee Card */}
-            <div className="group relative bg-gray-50 rounded-[2.5rem] p-8 h-[360px] transition-all hover:bg-gray-100 hover:shadow-lg hover:shadow-gray-100/50 overflow-hidden border border-gray-100">
+            <div className="group relative bg-gray-50 rounded-[2.5rem] p-8 h-[360px] transition-all hover:bg-gray-100 hover:shadow-lg hover:shadow-gray-100/50 overflow-hidden border border-gray-100 cursor-pointer hover:-translate-y-1 duration-300">
                <div className="absolute top-8 left-8 z-10">
-                   <span className="inline-block px-4 py-1.5 bg-white rounded-full text-xs font-bold text-gray-900 shadow-sm mb-6 uppercase tracking-wider">
+                   <span className="inline-block px-4 py-1.5 bg-white rounded-full text-xs font-bold text-gray-900 shadow-sm mb-6 uppercase tracking-wider group-hover:scale-105 transition-transform">
                        Employees
                    </span>
                    <div className="flex -space-x-3 mt-2 pl-1">
@@ -36,7 +36,7 @@ export const WorkforceSection: React.FC = () => {
                    <p className="text-3xl font-display font-medium text-gray-900 mb-1 leading-tight tracking-tight">Hire <br/> Employees</p>
                </div>
                <div className="absolute bottom-8 right-8 z-10">
-                   <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm group-hover:bg-black group-hover:text-white transition-all duration-300 transform group-hover:scale-110">
+                   <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm group-hover:bg-black group-hover:text-white transition-all duration-300 transform group-hover:scale-110 active:scale-90">
                        <ArrowUpRight className="w-5 h-5" />
                    </button>
                </div>
@@ -45,9 +45,9 @@ export const WorkforceSection: React.FC = () => {
             </div>
 
             {/* Contractor Card */}
-            <div className="group relative bg-[#1F2937] rounded-[2.5rem] p-8 h-[360px] transition-all hover:bg-gray-800 hover:shadow-xl hover:shadow-gray-900/20 overflow-hidden">
+            <div className="group relative bg-[#1F2937] rounded-[2.5rem] p-8 h-[360px] transition-all hover:bg-gray-800 hover:shadow-xl hover:shadow-gray-900/20 overflow-hidden cursor-pointer hover:-translate-y-1 duration-300">
                <div className="absolute top-8 left-8 z-10">
-                   <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md rounded-full text-xs font-bold text-white mb-6 uppercase tracking-wider border border-white/10">
+                   <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md rounded-full text-xs font-bold text-white mb-6 uppercase tracking-wider border border-white/10 group-hover:bg-white/20 transition-all">
                        Force
                    </span>
                    <div className="flex mt-2">
@@ -59,7 +59,7 @@ export const WorkforceSection: React.FC = () => {
                    <p className="text-3xl font-display font-medium text-white mb-1 leading-tight tracking-tight">Hire a <br/> Contractor</p>
                </div>
                <div className="absolute bottom-8 right-8 z-10">
-                   <button className="w-12 h-12 bg-white/10 backdrop-blur-md text-white rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-300 transform group-hover:scale-110 border border-white/10">
+                   <button className="w-12 h-12 bg-white/10 backdrop-blur-md text-white rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-300 transform group-hover:scale-110 active:scale-90 border border-white/10">
                        <ArrowUpRight className="w-5 h-5" />
                    </button>
                </div>
@@ -70,10 +70,10 @@ export const WorkforceSection: React.FC = () => {
           
            {/* Pagination Arrows */}
             <div className="flex items-center gap-4">
-                <button className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-200 text-gray-400 hover:text-black hover:border-black transition-colors">
+                <button className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-200 text-gray-400 hover:text-black hover:border-black transition-all duration-200 active:scale-95 hover:bg-gray-50">
                     <ArrowLeft className="w-5 h-5" />
                 </button>
-                 <button className="w-12 h-12 flex items-center justify-center rounded-full bg-black text-white hover:bg-gray-800 transition-colors shadow-lg shadow-gray-200">
+                 <button className="w-12 h-12 flex items-center justify-center rounded-full bg-black text-white hover:bg-gray-800 transition-all duration-200 shadow-lg shadow-gray-200 hover:shadow-xl active:scale-95">
                     <ArrowRight className="w-5 h-5" />
                 </button>
             </div>
@@ -82,7 +82,7 @@ export const WorkforceSection: React.FC = () => {
 
         {/* Right Column - Featured Profile */}
         <div className="w-full lg:w-[420px] lg:pt-12">
-            <div className="relative w-full h-[600px] lg:h-full rounded-[2.5rem] overflow-hidden group shadow-2xl shadow-gray-200">
+            <div className="relative w-full h-[600px] lg:h-full rounded-[2.5rem] overflow-hidden group shadow-2xl shadow-gray-200 hover:shadow-3xl transition-shadow duration-500">
                 <img 
                     src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1288&auto=format&fit=crop" 
                     alt="Savannah Nguyen" 
@@ -94,12 +94,12 @@ export const WorkforceSection: React.FC = () => {
                     <h3 className="text-3xl font-display font-medium text-white mb-2 tracking-tight">Savannah Nguyen</h3>
                     <p className="text-gray-300 text-base font-light mb-6">CEO, Los Angeles, USA</p>
                     <div className="h-1 w-full bg-white/20 rounded-full overflow-hidden">
-                        <div className="h-full w-1/3 bg-white rounded-full"></div>
+                        <div className="h-full w-1/3 bg-white rounded-full group-hover:w-2/3 transition-all duration-700"></div>
                     </div>
                 </div>
 
                  <div className="absolute top-8 right-8">
-                    <button className="bg-white/10 backdrop-blur-md text-white px-5 py-2 rounded-full text-xs font-bold tracking-wider uppercase border border-white/20 hover:bg-white/20 transition-colors">
+                    <button className="bg-white/10 backdrop-blur-md text-white px-5 py-2 rounded-full text-xs font-bold tracking-wider uppercase border border-white/20 hover:bg-white/20 transition-all duration-200 hover:scale-105 active:scale-95">
                         Featured
                     </button>
                 </div>
@@ -110,11 +110,11 @@ export const WorkforceSection: React.FC = () => {
       {/* Logo Footer */}
       <div className="border-t border-gray-100 pt-16 pb-8">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center opacity-40 hover:opacity-100 transition-opacity duration-500">
-            <span className="text-2xl font-black font-mono text-gray-800">tatari</span>
-            <span className="text-2xl font-bold font-serif italic text-gray-800">Brex</span>
-            <span className="text-2xl font-semibold text-gray-800 tracking-tighter">Assembled</span>
-            <span className="text-2xl font-extrabold text-gray-800 tracking-tight">Thumbtack</span>
-            <div className="flex items-center gap-2 text-gray-800">
+            <span className="text-2xl font-black font-mono text-gray-800 cursor-default hover:scale-105 transition-transform duration-300">tatari</span>
+            <span className="text-2xl font-bold font-serif italic text-gray-800 cursor-default hover:scale-105 transition-transform duration-300">Brex</span>
+            <span className="text-2xl font-semibold text-gray-800 tracking-tighter cursor-default hover:scale-105 transition-transform duration-300">Assembled</span>
+            <span className="text-2xl font-extrabold text-gray-800 tracking-tight cursor-default hover:scale-105 transition-transform duration-300">Thumbtack</span>
+            <div className="flex items-center gap-2 text-gray-800 cursor-default hover:scale-105 transition-transform duration-300">
                  <div className="w-6 h-6 bg-gray-800 rounded-sm"></div>
                  <span className="text-2xl font-display font-bold">Lattice</span>
             </div>

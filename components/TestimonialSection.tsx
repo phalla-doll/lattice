@@ -93,13 +93,13 @@ export const TestimonialSection: React.FC = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-gray-900 border border-gray-200 px-8 py-4 rounded-full text-base font-medium hover:border-gray-400 hover:bg-gray-50 transition-all">
+        <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-gray-900 border border-gray-200 px-8 py-4 rounded-full text-base font-medium hover:border-gray-400 hover:bg-gray-50 transition-all duration-200 active:scale-[0.98]">
             View all testimonials
             <ArrowRight className="w-4 h-4" />
         </button>
-        <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-black text-white px-8 py-4 rounded-full text-base font-medium hover:bg-gray-800 transition-all hover:-translate-y-1 shadow-xl shadow-gray-200">
+        <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-black text-white px-8 py-4 rounded-full text-base font-medium hover:bg-gray-800 transition-all duration-200 hover:-translate-y-1 active:translate-y-0 active:scale-[0.98] shadow-xl shadow-gray-200 hover:shadow-2xl">
             Request a demo
-            <ArrowUpRight className="w-4 h-4" />
+            <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </button>
       </div>
     </section>

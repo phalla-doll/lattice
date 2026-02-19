@@ -18,12 +18,12 @@ export const Navbar: React.FC = () => {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Left Side: Logo */}
         <div className="flex items-center gap-2 cursor-pointer group">
-          <div className="w-9 h-9 bg-black rounded-lg flex items-center justify-center text-white transition-transform group-hover:scale-105">
+          <div className="w-9 h-9 bg-black rounded-lg flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-105 group-active:scale-95 shadow-md">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="w-5 h-5">
               <path d="M7 17L17 7M7 7h10v10" />
             </svg>
           </div>
-          <span className="text-xl font-display font-bold tracking-tight">Lattice</span>
+          <span className="text-xl font-display font-bold tracking-tight text-gray-900 group-hover:text-black transition-colors">Lattice</span>
         </div>
 
         {/* Center: Desktop Links */}
@@ -32,7 +32,7 @@ export const Navbar: React.FC = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-gray-500 hover:text-black hover:bg-gray-50 px-4 py-2 rounded-full transition-all"
+              className="text-sm font-medium text-gray-500 hover:text-black hover:bg-gray-50 px-4 py-2 rounded-full transition-all duration-200 ease-out active:scale-95"
             >
               {link.label}
             </a>
@@ -41,30 +41,30 @@ export const Navbar: React.FC = () => {
 
         {/* Right Side: Actions */}
         <div className="hidden md:flex items-center gap-3">
-           <button className="p-2.5 text-gray-500 hover:bg-gray-100 hover:text-black rounded-full transition-colors">
+           <button className="p-2.5 text-gray-500 hover:bg-gray-100 hover:text-black rounded-full transition-all duration-200 active:scale-90">
             <Search className="w-5 h-5" />
           </button>
           
           <div className="h-4 w-px bg-gray-200 mx-1"></div>
 
-          <button className="px-5 py-2.5 text-sm font-medium text-gray-600 hover:text-black transition-colors">
+          <button className="px-5 py-2.5 text-sm font-medium text-gray-600 hover:text-black transition-all duration-200 hover:bg-gray-50 rounded-full active:scale-95">
             Log in
           </button>
           
-          <button className="flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-gray-200">
+          <button className="flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-gray-200 hover:shadow-xl">
             Get Started
-            <ArrowUpRight className="w-4 h-4" />
+            <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </button>
         </div>
 
         {/* Mobile Toggle */}
         <div className="flex items-center gap-4 md:hidden">
-          <button className="p-2 text-gray-600 hover:bg-gray-100 rounded-full">
+          <button className="p-2 text-gray-600 hover:bg-gray-100 rounded-full transition-colors active:scale-95">
             <Search className="w-5 h-5" />
           </button>
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="flex items-center gap-2 px-4 py-2 border border-gray-200 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors bg-white"
+            className="flex items-center gap-2 px-4 py-2 border border-gray-200 rounded-full text-sm font-medium hover:bg-gray-50 transition-all duration-200 active:scale-95 bg-white"
           >
             {isMenuOpen ? <X className="w-4 h-4"/> : <Menu className="w-4 h-4" />}
             Menu
@@ -79,16 +79,16 @@ export const Navbar: React.FC = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-lg font-medium text-gray-800 py-3 border-b border-gray-50 last:border-0"
+              className="text-lg font-medium text-gray-800 py-3 border-b border-gray-50 last:border-0 hover:text-black hover:pl-2 transition-all duration-200"
             >
               {link.label}
             </a>
           ))}
           <div className="flex flex-col gap-3 mt-4">
-            <button className="w-full py-3 text-center text-sm font-medium text-gray-600 border border-gray-200 rounded-full">
+            <button className="w-full py-3 text-center text-sm font-medium text-gray-600 border border-gray-200 rounded-full hover:bg-gray-50 active:scale-[0.98] transition-all">
               Log in
             </button>
-            <button className="flex items-center justify-center gap-2 bg-black text-white px-5 py-3 rounded-full text-sm font-medium hover:bg-gray-800 w-full shadow-lg">
+            <button className="flex items-center justify-center gap-2 bg-black text-white px-5 py-3 rounded-full text-sm font-medium hover:bg-gray-800 w-full shadow-lg active:scale-[0.98] transition-all">
               Get Started
               <ArrowUpRight className="w-4 h-4" />
             </button>

@@ -28,7 +28,7 @@ export const TeamSection: React.FC = () => {
             
             <div className="flex items-center gap-4">
                {/* Online Status Badge */}
-               <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/20 shadow-sm">
+               <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/20 shadow-sm transition-all hover:bg-white/30 cursor-default">
                    <span className="relative flex h-2.5 w-2.5">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-400"></span>
@@ -36,7 +36,7 @@ export const TeamSection: React.FC = () => {
                    <span className="text-sm font-bold text-white tracking-wide uppercase text-[11px]">Online Now</span>
                </div>
                
-               <button className="w-12 h-12 flex items-center justify-center rounded-full bg-white text-gray-900 hover:scale-110 transition-transform shadow-lg">
+               <button className="w-12 h-12 flex items-center justify-center rounded-full bg-white text-gray-900 hover:scale-110 active:scale-90 transition-all duration-300 shadow-lg hover:shadow-xl">
                    <ArrowUpRight className="w-5 h-5" />
                </button>
             </div>
@@ -48,9 +48,9 @@ export const TeamSection: React.FC = () => {
             {/* Browser Header / Navigation */}
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 p-8 border-b border-white/10">
                 <div className="flex items-center gap-2">
-                    <div className="w-3.5 h-3.5 rounded-full bg-[#FF5F57] shadow-sm"></div>
-                    <div className="w-3.5 h-3.5 rounded-full bg-[#FEBC2E] shadow-sm"></div>
-                    <div className="w-3.5 h-3.5 rounded-full bg-[#28C840] shadow-sm"></div>
+                    <div className="w-3.5 h-3.5 rounded-full bg-[#FF5F57] shadow-sm hover:scale-110 transition-transform"></div>
+                    <div className="w-3.5 h-3.5 rounded-full bg-[#FEBC2E] shadow-sm hover:scale-110 transition-transform"></div>
+                    <div className="w-3.5 h-3.5 rounded-full bg-[#28C840] shadow-sm hover:scale-110 transition-transform"></div>
                 </div>
                 
                 <div className="flex p-1 bg-black/20 rounded-full backdrop-blur-md overflow-x-auto no-scrollbar max-w-full">
@@ -58,7 +58,7 @@ export const TeamSection: React.FC = () => {
                     <button
                         key={tab}
                         onClick={() => setActiveTab(tab)}
-                        className={`px-6 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all duration-300 ${
+                        className={`px-6 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all duration-300 active:scale-95 ${
                         activeTab === tab
                             ? 'bg-white text-gray-900 shadow-lg'
                             : 'text-white/70 hover:text-white hover:bg-white/10'
@@ -77,9 +77,9 @@ export const TeamSection: React.FC = () => {
                     {/* Team Members Grid (Left) */}
                     <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         {teamMembers.map((member) => (
-                            <div key={member.id} className="group bg-white rounded-[2rem] p-5 flex flex-col gap-5 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                            <div key={member.id} className="group bg-white rounded-[2rem] p-5 flex flex-col gap-5 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer active:scale-[0.98]">
                                 <div className="flex justify-between items-start">
-                                    <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 group-hover:bg-black group-hover:text-white transition-colors duration-300">
+                                    <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 group-hover:bg-black group-hover:text-white transition-all duration-300 active:scale-90">
                                          <ArrowUpRight className="w-5 h-5" />
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@ export const TeamSection: React.FC = () => {
                                 </div>
 
                                 <div>
-                                    <h4 className="text-lg font-bold text-gray-900 leading-tight">{member.name}</h4>
+                                    <h4 className="text-lg font-bold text-gray-900 leading-tight group-hover:text-black transition-colors">{member.name}</h4>
                                     <p className="text-sm text-gray-500 font-medium mt-1">{member.role}</p>
                                 </div>
                             </div>
@@ -102,12 +102,12 @@ export const TeamSection: React.FC = () => {
                     </div>
 
                     {/* Info Card (Right) */}
-                    <div className="lg:col-span-4 bg-[#111827] rounded-[2rem] p-10 flex flex-col justify-between relative overflow-hidden text-white group min-h-[400px]">
+                    <div className="lg:col-span-4 bg-[#111827] rounded-[2rem] p-10 flex flex-col justify-between relative overflow-hidden text-white group min-h-[400px] hover:shadow-2xl transition-shadow duration-500">
                          {/* Abstract Shape */}
                         <div className="absolute -top-20 -right-20 w-64 h-64 bg-gray-800/50 rounded-full blur-3xl transition-transform duration-700 group-hover:scale-125"></div>
                         
                         <div className="relative z-10">
-                            <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg text-xs font-bold tracking-widest uppercase mb-8 border border-white/10">
+                            <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg text-xs font-bold tracking-widest uppercase mb-8 border border-white/10 group-hover:bg-white/20 transition-all">
                                 Insight
                             </span>
                             <h3 className="text-3xl font-display font-medium leading-tight mb-4">
@@ -119,7 +119,7 @@ export const TeamSection: React.FC = () => {
                         </div>
                         
                         <div className="relative z-10 pt-8">
-                            <a href="#" className="inline-flex items-center gap-3 text-sm font-bold hover:text-gray-300 transition-colors group-hover:translate-x-2 duration-300">
+                            <a href="#" className="inline-flex items-center gap-3 text-sm font-bold hover:text-gray-300 transition-all duration-300 group-hover:translate-x-2 active:opacity-80">
                                 Read Case Study <ArrowUpRight className="w-4 h-4" />
                             </a>
                         </div>

@@ -14,9 +14,9 @@ export const Footer: React.FC = () => {
         </div>
         <p className="text-gray-500 text-sm">© 2024 Lattice. All rights reserved. Design clone for educational purposes.</p>
         <div className="flex gap-6">
-            <a href="#" className="text-gray-500 hover:text-black text-sm">Privacy</a>
-            <a href="#" className="text-gray-500 hover:text-black text-sm">Terms</a>
-            <a href="#" className="text-gray-500 hover:text-black text-sm">Cookies</a>
+            <a href="#" className="text-gray-500 hover:text-black text-sm transition-colors duration-200 hover:underline hover:decoration-gray-300 underline-offset-4">Privacy</a>
+            <a href="#" className="text-gray-500 hover:text-black text-sm transition-colors duration-200 hover:underline hover:decoration-gray-300 underline-offset-4">Terms</a>
+            <a href="#" className="text-gray-500 hover:text-black text-sm transition-colors duration-200 hover:underline hover:decoration-gray-300 underline-offset-4">Cookies</a>
         </div>
       </div>
     </footer>
